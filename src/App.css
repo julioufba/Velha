@@ -1,0 +1,71 @@
+*{
+  margin:0;
+  padding: 0;}
+
+main{
+ 
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+
+.board{
+  display: flex;
+  width: 170px;
+  height: 200px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+.cell{
+  background-color: pink;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin:2px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5%; 
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0,0, 0, 0.5); /* Adiciona sombra */
+
+  
+
+}
+.cell.O{
+  background-color: aquamarine;
+}
+.cell.X{
+  background-color: orange;
+}
+.again{
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+ background-color: whitesmoke;
+}
+.again:hover {
+  background-color: gray; /* Mudar a cor de fundo ao passar o mouse */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar a sombra ao passar o mouse */}
+
+
+  .win{
+    padding-bottom: 30px;
+  }
+
+  .board.Winner{
+    opacity: 0.3;
+  }
+  .empate{
+    padding-bottom: 20px;
+  }
